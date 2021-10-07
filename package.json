@@ -1,0 +1,23 @@
+{
+  "name": "zseis-lessons",
+  "version": "1.0.0",
+  "description": "Notes and exercises from my school managed with :octokit: GitHub!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "readme:tree": "markdown-notes-tree --noSubdirectoryTrees"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/konhi/zseis-lessons.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/konhi/zseis-lessons/issues"
+  },
+  "homepage": "https://github.com/konhi/zseis-lessons#readme",
+  "dependencies": {
+    "markdown-notes-tree": "^1.11.1"
+  }
+}
