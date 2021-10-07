@@ -1,0 +1,1 @@
+console.log("Witaj w szkole JS!")
