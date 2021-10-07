@@ -45,6 +45,8 @@ Notes and exercises from my school managed with :octocat: GitHub!
             - [**025 LAB**](<2020/02 Web Dev/02 Practice/025 LAB>)
 - [**2021**](2021)
     - [**01 Databases**](<2021/01 Databases>)
+        - [**01 Theory**](<2021/01 Databases/01 Theory>)
+            - [ℹ Terminologia](<2021/01 Databases/01 Theory/01.md>)
         - [**02 Practice**](<2021/01 Databases/02 Practice>)
             - [**04 School**](<2021/01 Databases/02 Practice/04 School>)
     - [**02 Web Dev**](<2021/02 Web Dev>)
