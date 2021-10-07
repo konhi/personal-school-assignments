@@ -1,0 +1,1 @@
+console.log(`Pobrana wartość to: ${prompt()}`)
