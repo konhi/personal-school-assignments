@@ -1,0 +1,50 @@
+article {
+    margin: auto;
+    width: 450px;
+    height: 450px;
+    border: solid 1px;
+    overflow-y: scroll;
+    position: relative;
+}
+
+img {
+    position: absolute;
+    z-index: 10;
+    width: 128px;
+}
+
+.lt {
+    top: 16px;
+    left: 16px;
+}
+
+.lb {
+    bottom: 16px;
+    left: 16px;
+}
+
+.rt {
+    right: 16px;
+    top: 16px;
+}
+
+.rb {
+    right: 16px;
+    bottom: 16px;
+}
+
+.wrapper {
+    position: relative;
+    padding-left: 300px;
+}
+
+.box {
+    border: solid 1px;
+    margin: auto;
+    width: 125px;
+    z-index: 2;
+    background-color: #eeeeee;
+    opacity: 0.9;
+    top: 200px;
+    position: fixed;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Wykorzystaj przygotowany w poprzednim ćwiczeniu szablon do wykonania strony zbliżonej wyglądem do strony na rysunku 3.65.
+Uklad strony ma byc identyczny z ukladem na rysunku.
+Tresc ma byc zgodna z trescia prezentowana na rysunku - z wyjatkiem autora strony (tresc ta byla wykorzystywana przez nas we wczesniejszych laboratoriach).
+Menu ma być w pelni funkcjonalne i ma przenosic nas do odpowiednich podstron. Podstrony nalezy samodzielnie przygotowac. Najlepiej aby wczytywaly sie do jednej z kolumn.
+ -->
+    <nav class="nav">
+        <div class="nav__headers">
+            <header class="nav__header">
+                <h1>Rewolucja przemysłowa 4.0</h1>
+            </header>
+        </div>
+        <div class="nav__columns-wrapper">
+            <div class="nav__column">
+                <span class="nav__column-title">Start</span>
+            </div>
+            <div class="nav__column">
+                <span class="nav__column-title">Kursy</span>
+                <ul class="nav__links">
+                    <li class="nav__item">
+                        <a href="kurs_rewolucji_przemyslowej.html" class="nav__link">Kurs o pierwszej rewolucji przemysłowej</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="kurs_historii.html" class="nav__link">Kurs historii rewolucji przemysłowej</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__column">
+                <span class="nav__column-title">Artykuły</span>
+                <ul class="nav__links">
+                    <li class="nav__item">
+                        <a href="pierwsza-rewolucja-przemyslowa.html" class="nav__link">Pierwsza rewolucja przemysłowa</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__column">
+                <span class="nav__column-title">Kontakt</span>
+                <ul class="nav__links">
+                    <li class="nav__item">
+                        <a href="mailto:jan.szymanski.zseis@gmail.com" class="nav__link">E-mail</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <section class="section">
+            <aside class="aside">
+                <nav class="aside__nav">
+                    <ul class="aside__nav__links">
+                        <li class="aside__nav__item">
+                            <a href="pierwsza-rewolucja-przemyslowa.html" class="aside__nav__link">Pierwsza rewolucja przemysłowa</a>
+                        </li>
+                        <li class="aside__nav__item">
+                            <a href="druga-rewolucja-przemyslowa.html" class="aside__nav__link">Druga rewolucja przemysłowa</a>
+                        </li>
+                        <li class="aside__nav__item">
+                            <a href="trzecia-rewolucja-przemyslowa.html" class="aside__nav__link">Trzecia rewolucja przemysłowa</a>
+                        </li>
+                        <li class="aside__nav__item">
+                            <a href="czwarta-rewolucja-przemyslowa.html" class="aside__nav__link">Czwarta rewolucja przemysłowa</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <main class="articles">
+                <h2 class="articles__header">Rewolucja przemysłowa</h2>
+                <article class="article">
+                    <a href="pierwsza-rewolucja-przemyslowa.html" class="article__link">
+                        <h3 class="article__title">
+                            Pierwsza rewolucja przemysłowa
+                        </h3>
+                        <p class="article__description">
+                            Pierwsza rewolucja przemysłowa to wiek pary.<br> Produkcja mechaniczna jest wspomagana siłą pary i wody.
+                        </p>
+                    </a>
+                </article>
+                <article class="article">
+                    <a href="druga-rewolucja-przemyslowa.html" class="article__link">
+                        <h3 class="article__title">
+                            Druga rewolucja przemysłowa
+                        </h3>
+                        <p class="article__description">
+                            Druga rewolucja przemysłowa to wiek elektryczności.<br> Rozpoczyna się produkcją masową z zastosowaniem energii elektrycznej.
+                        </p>
+                    </a>
+                </article>
+                <article class="article">
+                    <a href="trzecia-rewolucja-przemyslowa.html" class="article__link">
+                        <h3 class="article__title">
+                            Trzecia rewolucja przemysłowa
+                        </h3>
+                        <p class="article__description">
+                            Trzecia rewolucja przemysłowa to wiek komputerów.<br> Postępuje automatyzacja produkcji przemysłowej z wykorzystnaiem sterowników programowalnych.
+                        </p>
+                    </a>
+                </article>
+                <article class="article">
+                    <a href="czwarta-rewolucja-przemyslowa.html" class="article__link">
+                        <h3 class="article__title">
+                            Czwarta rewolucja przemysłowa
+                        </h3>
+                        <p class="article__description">
+                            Czwarta rewolucja przemysłowa to zanikanie bariery między ludźmi i maszynami.<br> Powstają inteligentne fabryki z cyberfizycznymi systemami produkcji w otoczeniu: Internetu ludzi, Internetu rzeczy, Internetu usług, Internetu
+                            danych.
+                        </p>
+                    </a>
+                </article>
+            </main>
+            <aside class="info">
+                <h2 class="info__title">
+                    Informacje dodatkowe
+                </h2>
+            </aside>
+        </section>
+    </div>
+    </div>
+    <footer class="footer">
+        Prace wykonał: Jan Szymański
+    </footer>
+</body>
+
+</html>

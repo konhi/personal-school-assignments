@@ -1,0 +1,40 @@
+body {
+    text-align: center;
+    background-color: #fdffe7;
+    color: #3d281f;
+    font-size: 1.25em;
+    line-height: 250%;
+}
+
+article {
+    margin: auto;
+    width: 800px;
+}
+
+p::first-letter {
+    font-size: 3.5em;
+    color: #570000;
+}
+
+h1 {
+    font-style: italic;
+    font-family: Papyrus;
+    font-size: 3.5em;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-style: italic;
+    font-size: 3em;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-style: italic;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+hr {
+    border: 2px solid #3d281f;
+}

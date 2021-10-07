@@ -1,0 +1,19 @@
+div {
+    border-style: solid;
+}
+
+.margin--second {
+    margin: 1cm;
+    border-color:rebeccapurple
+}
+
+.margin--third {
+    padding: 1cm 3cm 1cm 3cm;
+    border-color:sandybrown
+}
+
+.margin--fourth {
+    margin: 0 5cm 0 2cm;
+    padding-bottom: 3cm;
+    border-color:violet
+}

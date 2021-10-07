@@ -1,0 +1,18 @@
+1. Jakie mamy dwa podstawowe rodzaje grafiki komputerowej?
+> rastrowa i wektorowa
+
+2. Charakterystyka grafiki wektorowej
+> składają się z linii i kształtów, definiowanych matematycznie przez zestaw algorytmów lub wzorów.
+
+3. Trzy najwazniejsze formaty grafiki wektorowej
+> SVG, SWF, CDR
+
+4. Popularne programy komercyjne i darmowe do tworzenia grafiki wektorowej
+> Adobe Illustrator, Inkscape
+
+5. Do czego stosujemy grafike wektorowa?
+> logotypy, ilustracje, ikony itd.
+
+6. Charakterystyka programu INKSCAPE
+> open-source program do grafiki wektorowej
+

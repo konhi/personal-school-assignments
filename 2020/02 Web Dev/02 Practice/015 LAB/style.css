@@ -1,0 +1,16 @@
+.lista--punktowa {
+    list-style-image: url("punktor.png");
+    list-style-position: inside;
+}
+
+.lista--numerowana {
+    list-style-position: oustide;
+}
+
+.lista--podpunktowa {
+    list-style-position: oustide;
+}
+
+.lista--zagniezdzona {
+    list-style-position: oustide;
+}

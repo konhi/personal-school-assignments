@@ -1,0 +1,26 @@
+img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.first {
+    top: 32px;
+    left: 32px;
+}
+
+.second {
+    top: 64px;
+    left: 64px;
+}
+
+.third {
+    top: 96px;
+    left: 96px;
+}
+
+.fourth {
+    top: 128px;
+    left: 128px;
+}

@@ -1,0 +1,26 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #171818;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: #939398;
+}
+
+div {
+    border-radius: 4px;
+    padding: 16px;
+    transition: 0.25s;
+}
+
+div:hover {
+    transition: 0.25s;
+    background-color: #252727;
+}

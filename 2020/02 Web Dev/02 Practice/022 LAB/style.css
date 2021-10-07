@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+.wrapper__nav {
+    min-height: 200px;
+    width: 200px;
+    max-width: 200px;
+    background-color: #EEE;
+}
+
+.nav {
+    padding: 16px;
+    min-height: 200px;
+    width: 200px;
+    max-width: 200px;
+    background-color: #EEE;
+}
+
+.article {
+    width: 100%;
+    padding: 16px;
+    background-color: rgb(245, 243, 243);
+}

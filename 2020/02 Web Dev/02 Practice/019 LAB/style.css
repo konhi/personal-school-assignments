@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    background-color: #110d1b;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.nav__span {
+    font-size: 24px;
+}
+
+.nav__anchor--expanded {
+    margin: 8px;
+    text-decoration: none;
+    color: #b8b8b8;
+}
+
+.nav__box--expanded {
+    opacity: 0;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.nav__box:hover .nav__box--expanded {
+    transition: 0.5s;
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav__anchor--expanded:hover {
+    transition: 0.5s;
+    color: #fff;
+}
+
+.nav__box {
+    padding: 16px;
+}
