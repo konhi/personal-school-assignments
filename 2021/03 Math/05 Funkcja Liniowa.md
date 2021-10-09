@@ -1,3 +1,5 @@
+# Funkcja Liniowa
+
 [**Pizza Math**: Liceum. Klasa I. Wstęp do funkcji](https://www.youtube.com/watch?v=U2cq3ajIZro) (jeśli ktoś, jak ja, jeszcze nie zna podstaw)
 
 - **Analogia do programowania:**
