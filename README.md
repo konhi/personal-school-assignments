@@ -51,6 +51,7 @@ Notes and exercises from my school managed with :octocat: GitHub!
             - [**01 Biblioteka**](<2021/01 Databases/02 Practice/01 Biblioteka>)
             - [**02 duzatabelka**](<2021/01 Databases/02 Practice/02 duzatabelka>)
             - [**04 School**](<2021/01 Databases/02 Practice/04 School>)
+            - [**05 School2**](<2021/01 Databases/02 Practice/05 School2>)
     - [**02 Web Dev**](<2021/02 Web Dev>)
         - [**01 Theory**](<2021/02 Web Dev/01 Theory>)
             - [**01 Zmienne i operatory**](<2021/02 Web Dev/01 Theory/01 Zmienne i operatory>)
