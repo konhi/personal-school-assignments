@@ -49,6 +49,8 @@ Notes and exercises from my school managed with :octocat: GitHub!
             - [ℹ Terminologia](<2021/01 Databases/01 Theory/01.md>)
         - [**02 Practice**](<2021/01 Databases/02 Practice>)
             - [**01 Biblioteka**](<2021/01 Databases/02 Practice/01 Biblioteka>)
+            - [**01b Books**](<2021/01 Databases/02 Practice/01b Books>)
+            - [**01c School**](<2021/01 Databases/02 Practice/01c School>)
             - [**02 duzatabelka**](<2021/01 Databases/02 Practice/02 duzatabelka>)
             - [**04 School**](<2021/01 Databases/02 Practice/04 School>)
             - [**05 School2**](<2021/01 Databases/02 Practice/05 School2>)
