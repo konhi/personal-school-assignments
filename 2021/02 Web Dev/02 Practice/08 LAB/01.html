@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <input type="number">
+    <button>Pokaż</button>
+    <div id="wynik">
+
+    </div>
+    <script>
+        const button = document.querySelector('button')
+        const input = document.querySelector('input')
+        const resultContainer = document.querySelector('#wynik')
+
+        button.addEventListener('click', () => {
+            resultContainer.innerHTML = `<h1>${input.value}</h1>`
+            console.log(typeof(input.value))
+        })
+    </script>
+</body>
+</html>

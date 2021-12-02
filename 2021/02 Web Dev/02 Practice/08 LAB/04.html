@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <select>
+    </select>
+    <div></div>
+    <script>
+        const continentsSelect = document.querySelector('select')
+        const result = document.querySelector('div')
+
+        const mountains = {
+            'Azja': 'Mount Everest (8848 m n.p.m.)',
+            'Ameryka-Południowa': 'Aconcagua (6961 m n.p.m.)',
+            'Ameryka-Północna': 'Denali (McKinley) (6195 m n.p.m.)',
+            'Afryka': 'Kilimandżaro (5895 m n.p.m.)',
+            'Europa': 'Elbrus (5642 m n.p.m.)',
+            'Australia-i-Oceania': 'Puncak Jaya (4884 m n.p.m.)',
+            'Antarktyda': 'Masyw Vinsona (4892 m n.p.m.)'
+        }
+
+        for (const mountain in mountains) {
+            continentsSelect.innerHTML += `<option value='${mountain}'>${mountain}</option>`
+        }
+
+        continentsSelect.addEventListener('change', (event) => {
+            result.innerHTML = mountains[event.target.value]
+        })
+    </script>
+</body>
+</html>

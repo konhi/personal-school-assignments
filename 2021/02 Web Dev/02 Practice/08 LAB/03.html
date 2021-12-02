@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <input class="first" type="number">
+    <span>+</span>
+    <input class="second" type="number">
+    <button>=</button>
+    <input class='sum' type="number" disabled>
+    <script>
+        const button = document.querySelector('button')
+        const sum = document.querySelector('.sum')
+
+        button.addEventListener('click', () => {
+            const firstNumber = document.querySelector('.first').valueAsNumber
+            const secondNumber = document.querySelector('.second').valueAsNumber
+
+            sum.value = firstNumber + secondNumber
+        })
+    </script>
+</body>
+</html>
