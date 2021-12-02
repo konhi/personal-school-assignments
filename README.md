@@ -60,6 +60,7 @@ Notes and exercises from my school managed with :octocat: GitHub!
         - [**02 Practice**](<2021/02 Web Dev/02 Practice>)
             - [**01 Skrypty**](<2021/02 Web Dev/02 Practice/01 Skrypty>)
             - [**07 LAB**](<2021/02 Web Dev/02 Practice/07 LAB>)
+            - [**08 LAB**](<2021/02 Web Dev/02 Practice/08 LAB>)
     - [**03 Math**](<2021/03 Math>)
         - [Funkcja Liniowa](<2021/03 Math/05 Funkcja Liniowa.md>)
 
