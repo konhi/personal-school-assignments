@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <div>
+      <button data-color="red">Czerwone tło</button>
+      <button data-color="blue">Niebieskie tło</button>
+    </div>
+    <script>
+      for (const button of document.querySelectorAll('button')) {
+        button.addEventListener("click", () => {
+          document.querySelector("body").style.backgroundColor = button.dataset.color
+        })
+      }
+
+      const div = document.querySelector('div')
+      div.style.width = '250px'
+      div.style.height = '250px'
+      div.style.border = '5px solid green'
+    </script>
+  </body>
+</html>

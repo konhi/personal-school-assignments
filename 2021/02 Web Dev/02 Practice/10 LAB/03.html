@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <div>
+      <input type="range" min="0" max="255">
+    </div>
+    <script>
+      const body = document.querySelector('body')
+      body.style.backgroundColor = "black"
+
+      const range = document.querySelector('input')
+      
+      range.addEventListener('change', () => {
+        body.style.backgroundColor = `rgb(${range.value}, 0, 0)`
+      })
+    </script>
+  </body>
+</html>

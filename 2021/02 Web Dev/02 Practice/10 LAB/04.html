@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <div>
+      <input type="range" min="0" max="255" />
+      <input type="range" min="0" max="255" />
+      <input type="range" min="0" max="255" />
+    </div>
+    <script>
+      const body = document.querySelector("body");
+      body.style.backgroundColor = "white";
+
+      const ranges = document.querySelectorAll("input");
+
+      for (const range of ranges) {
+        range.addEventListener("change", () => {
+          body.style.backgroundColor = `rgb(${ranges[0].value}, ${ranges[1].value}, ${ranges[2].value})`;
+        });
+      }
+    </script>
+  </body>
+</html>
