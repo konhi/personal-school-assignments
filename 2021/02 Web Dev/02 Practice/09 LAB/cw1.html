@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <main>
+        <button id="przycisk">
+            Przycisk
+        </button>
+        <div id="div">
+            DIV
+        </div>
+        <span id="span">
+            SPAN
+        </span>
+    </main>
+    <script>
+        const elements = document.querySelector('main').children
+
+        for (const el of elements) {
+            el.addEventListener('click', (event) => {
+                alert(this.event.target.id)
+            })
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <select>
+    </select>
+    <div></div>
+    <script>
+        const continentsSelect = document.querySelector('select')
+        const result = document.querySelector('div')
+
+        const mountains = {
+            'Azja': {
+                description: 'Mount Everest (8848 m n.p.m.)',
+                src: 'https://www.google.com/maps/vt/data=AEkS9O8LbNP_r_sz6EFgoKVzAAMIg1HT_FRNembsvyd7W4jyGpecyP3xJF_rzzpjcGxbePNvpaoz51XkgV2D8RSuP9l-IT8fxgzIc3GOF6ghVQmuoZY2pTasmMjynld3ALE-NjvTI88U2tEGVIftylwF-UO58qjwyHvb7PpThaVS_QckV2ccdeA'
+            },
+            'Ameryka-Południowa': {
+                description: 'Aconcagua (6961 m n.p.m.)',
+                src: 'https://www.google.com/maps/vt/data=TpbxdKGIZ7x7GVIsqO99V_oEheoQGZk-gBl_oYBRGVBj_WVnH2NfKsyroSuUPPiyGYsjItt3s1N7alpKuZ1R2H86RI_BTCjYSX0mEAAEc5PAfeMZelDH9Ho6s0y2U3jlsU4cNAD53UbSHOrWYWE4ebqC4geLSXOGSXCs_gEUyLHWS0dHUQw8Z-D6'
+            },
+            'Ameryka-Północna': {
+                description: 'Denali (McKinley) (6195 m n.p.m.)',
+                src: 'https://www.google.com/maps/vt/data=RL7hb8-qvK_y1UhFY-D3ZZYcQPdlVVQHhic4Y4An38lghmXjzxsQ6Li_5VB1rC9ejc2sBVB-Ix_oMSdghs3xGiQnbk_2I7es06uLzxa29Mnk3IcWlvAmOZzxYeJZ4n78guOvV0StwGZej57zkfOKi_LLJ2PvUeeVP5aW51f9OeTKVRRuq_UKSeVG'
+            },
+            'Afryka': {
+                description: 'Kilimandżaro (5895 m n.p.m.)',
+                src: 'https://www.google.com/maps/vt/data=r8kiEUmbku6NwucW-4PYujopiFv4tb0ng-BiWPaT9VkiEsUIE6f1ufMd8rkidGfELCLpuZiX51CJp7OxI-_XWS9U8miBHY5LKPs7y1MJSdWHwrRxne5xY9FyJFACxf8hp4Ga1PDq7hyqyhr2MmPmCf7bdvENCCH8yFW-MenuQteumABhn15XpmwV'
+            },
+            'Europa': {
+                description: 'Elbrus (5642 m n.p.m.)',
+                src: 'https://www.google.com/maps/vt/data=ttNlfkcZnW8htoZ_bky8tzIaFLp-P35wG39qRxUktECKjbzyJEjhBhfA4afwhXVBkQYtmYId3Fxrqv1X7_Kblco3dJQuGr7ANwofEjN1s3aPUnIOTzZGkhDiEWOGzzg2VWc1lmz9Hm9-qfb2cBLKnlofrfBrVnpngbzuRXqjVZoMsE25nw_DZwH4'
+            },
+            'Australia-i-Oceania': {
+                description: 'Puncak Jaya (4884 m n.p.m.)',
+                src: 'https://www.google.com/maps/vt/data=o4do6vbHILjG49OIbrIt3WmrGBTW1JrOAXlkxMQXT2h5f19dGnmHGxdHdr8Y6_Ae93bHv_fKOLK-fMR4oDbzaZ-3vj7MBZqmwaqxnMd_VE9aSeqnsjp44mFcAcJ22yLOdEu_qJExbp36V7KuKt89HDpTVJV30gpQiW7rhWcuT_BlDb9PNKSFjb86'
+            },
+            'Antarktyda': {
+                description: 'Masyw Vinsona (4892 m n.p.m.)',
+                src: 'https://geoforum.pl/upload/news_pl/picture/180514_antarktyda_3d.jpg'
+            }
+        }
+
+        for (const mountain in mountains) {
+            continentsSelect.innerHTML += `<option value='${mountain}'>${mountain}</option>`
+        }
+
+        continentsSelect.addEventListener('change', (event) => {
+            result.innerHTML = mountains[event.target.value].description +
+                `<img src='${mountains[event.target.value].src}' height=600px/>`
+        })
+    </script>
+</body>
+
+</html>
