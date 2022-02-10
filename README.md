@@ -63,6 +63,7 @@
             - [**08 LAB**](<2021/02 Web Dev/02 Practice/08 LAB>)
             - [**09 LAB**](<2021/02 Web Dev/02 Practice/09 LAB>)
             - [**10 LAB**](<2021/02 Web Dev/02 Practice/10 LAB>)
+            - [**11 LAB**](<2021/02 Web Dev/02 Practice/11 LAB>)
     - [**03 Math**](<2021/03 Math>)
         - [Funkcja Liniowa](<2021/03 Math/05 Funkcja Liniowa.md>)
 
