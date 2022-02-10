@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <div id="tablica">
+
+  </div>
+  <script>
+    const PERSONAL_INFO = [12, 05, 2005, 16, 175, 0, 20]
+    
+    for (const info of PERSONAL_INFO) {
+      document.querySelector('#tablica').textContent += info.toString() + ', '
+    }
+  </script>
+</body>
+</html>
