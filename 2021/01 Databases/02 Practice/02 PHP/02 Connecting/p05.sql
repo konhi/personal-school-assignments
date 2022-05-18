@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 11 Maj 2022, 12:59
+-- Czas generowania: 18 Maj 2022, 12:53
 -- Wersja serwera: 10.4.19-MariaDB
 -- Wersja PHP: 8.0.7
 
@@ -14,20 +14,6 @@ SET time_zone = "+00:00";
 --
 -- Baza danych: `p05`
 --
-
--- --------------------------------------------------------
-
---
--- Struktura tabeli dla tabeli `historia`
---
-
-CREATE TABLE `historia` (
-  `id` int(11) NOT NULL,
-  `id_ucznia` int(11) NOT NULL,
-  `id_ksiazki` int(11) NOT NULL,
-  `data_wypozyczenia` date NOT NULL,
-  `data_zwrotu` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -77,25 +63,20 @@ CREATE TABLE `wypozyczenia` (
   `id` int(11) NOT NULL,
   `id_ksiazki` int(11) NOT NULL,
   `id_ucznia` int(11) NOT NULL,
-  `data_wypozyczenia` date NOT NULL DEFAULT current_timestamp()
+  `data_wypozyczenia` date NOT NULL DEFAULT current_timestamp(),
+  `data_zwrotu` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Zrzut danych tabeli `wypozyczenia`
 --
 
-INSERT INTO `wypozyczenia` (`id`, `id_ksiazki`, `id_ucznia`, `data_wypozyczenia`) VALUES
-(3, 1, 1, '2022-05-11');
+INSERT INTO `wypozyczenia` (`id`, `id_ksiazki`, `id_ucznia`, `data_wypozyczenia`, `data_zwrotu`) VALUES
+(3, 1, 1, '2022-05-11', NULL);
 
 --
 -- Indeksy dla zrzutów tabel
 --
-
---
--- Indeksy dla tabeli `historia`
---
-ALTER TABLE `historia`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Indeksy dla tabeli `ksiazki`
@@ -118,12 +99,6 @@ ALTER TABLE `wypozyczenia`
 --
 -- AUTO_INCREMENT dla zrzuconych tabel
 --
-
---
--- AUTO_INCREMENT dla tabeli `historia`
---
-ALTER TABLE `historia`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT dla tabeli `ksiazki`
