@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 18 Maj 2022, 12:53
--- Wersja serwera: 10.4.19-MariaDB
--- Wersja PHP: 8.0.7
+-- Czas generowania: 01 Cze 2022, 12:56
+-- Wersja serwera: 10.4.13-MariaDB
+-- Wersja PHP: 7.4.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -14,6 +14,8 @@ SET time_zone = "+00:00";
 --
 -- Baza danych: `p05`
 --
+CREATE DATABASE IF NOT EXISTS `p05` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_polish_ci;
+USE `p05`;
 
 -- --------------------------------------------------------
 
@@ -23,16 +25,19 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `ksiazki` (
   `id` int(11) NOT NULL,
-  `tytul` varchar(255) NOT NULL,
-  `autor` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `tytul` varchar(255) CHARACTER SET utf8mb4 NOT NULL,
+  `autor` varchar(255) CHARACTER SET utf8mb4 NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_polish_ci;
 
 --
 -- Zrzut danych tabeli `ksiazki`
 --
 
 INSERT INTO `ksiazki` (`id`, `tytul`, `autor`) VALUES
-(1, 'Tytuł książki', 'Autor książki');
+(3, 'Biblia', 'Jezus Chrystus'),
+(4, 'Podręcznik do SQL', 'Jan Kowalski'),
+(5, 'Podstawy HTML', 'Marek Nowak'),
+(6, 'E08', 'CKE');
 
 -- --------------------------------------------------------
 
@@ -42,16 +47,17 @@ INSERT INTO `ksiazki` (`id`, `tytul`, `autor`) VALUES
 
 CREATE TABLE `uczniowie` (
   `id` int(11) NOT NULL,
-  `imie` varchar(255) NOT NULL,
-  `nazwisko` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `imie` varchar(255) CHARACTER SET utf8mb4 NOT NULL,
+  `nazwisko` varchar(255) CHARACTER SET utf8mb4 NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_polish_ci;
 
 --
 -- Zrzut danych tabeli `uczniowie`
 --
 
 INSERT INTO `uczniowie` (`id`, `imie`, `nazwisko`) VALUES
-(1, 'Imię ucznia', 'Nazwisko ucznia');
+(2, 'Jan', 'Szymański'),
+(3, 'Adam', 'Zielony');
 
 -- --------------------------------------------------------
 
@@ -65,14 +71,7 @@ CREATE TABLE `wypozyczenia` (
   `id_ucznia` int(11) NOT NULL,
   `data_wypozyczenia` date NOT NULL DEFAULT current_timestamp(),
   `data_zwrotu` date DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Zrzut danych tabeli `wypozyczenia`
---
-
-INSERT INTO `wypozyczenia` (`id`, `id_ksiazki`, `id_ucznia`, `data_wypozyczenia`, `data_zwrotu`) VALUES
-(3, 1, 1, '2022-05-11', NULL);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_polish_ci;
 
 --
 -- Indeksy dla zrzutów tabel
@@ -97,24 +96,24 @@ ALTER TABLE `wypozyczenia`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT dla zrzuconych tabel
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
 -- AUTO_INCREMENT dla tabeli `ksiazki`
 --
 ALTER TABLE `ksiazki`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT dla tabeli `uczniowie`
 --
 ALTER TABLE `uczniowie`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT dla tabeli `wypozyczenia`
 --
 ALTER TABLE `wypozyczenia`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 COMMIT;
